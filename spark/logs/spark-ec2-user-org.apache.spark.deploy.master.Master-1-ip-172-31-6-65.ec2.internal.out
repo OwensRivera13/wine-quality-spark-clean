@@ -1,0 +1,41 @@
+Spark Command: /usr/lib/jvm/temurin-11-jdk/bin/java -cp /home/ec2-user/spark/conf/:/home/ec2-user/spark/jars/*:/home/ec2-user/hadoop/conf -Xmx1g org.apache.spark.deploy.master.Master --host ip-172-31-6-65.ec2.internal --port 7077 --webui-port 8080
+========================================
+Using Spark's default log4j profile: org/apache/spark/log4j2-defaults.properties
+25/11/09 20:57:18 INFO Master: Started daemon with process name: 2934@ip-172-31-6-65.ec2.internal
+25/11/09 20:57:18 INFO SignalUtils: Registering signal handler for TERM
+25/11/09 20:57:18 INFO SignalUtils: Registering signal handler for HUP
+25/11/09 20:57:18 INFO SignalUtils: Registering signal handler for INT
+25/11/09 20:57:19 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+25/11/09 20:57:19 INFO SecurityManager: Changing view acls to: ec2-user
+25/11/09 20:57:19 INFO SecurityManager: Changing modify acls to: ec2-user
+25/11/09 20:57:19 INFO SecurityManager: Changing view acls groups to: 
+25/11/09 20:57:19 INFO SecurityManager: Changing modify acls groups to: 
+25/11/09 20:57:19 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users with view permissions: ec2-user; groups with view permissions: EMPTY; users with modify permissions: ec2-user; groups with modify permissions: EMPTY
+25/11/09 20:57:20 INFO Utils: Successfully started service 'sparkMaster' on port 7077.
+25/11/09 20:57:20 INFO Master: Starting Spark master at spark://ip-172-31-6-65.ec2.internal:7077
+25/11/09 20:57:20 INFO Master: Running Spark version 3.5.1
+25/11/09 20:57:20 INFO JettyUtils: Start Jetty 0.0.0.0:8080 for MasterUI
+25/11/09 20:57:20 INFO Utils: Successfully started service 'MasterUI' on port 8080.
+25/11/09 20:57:20 INFO MasterWebUI: Bound MasterWebUI to 0.0.0.0, and started at http://ec2-44-203-82-144.compute-1.amazonaws.com:8080
+25/11/09 20:57:20 INFO Master: I have been elected leader! New state: ALIVE
+25/11/09 20:57:22 INFO Master: Registering worker 172.31.2.233:35819 with 2 cores, 2.8 GiB RAM
+25/11/09 20:57:24 INFO Master: Registering worker 172.31.8.63:46331 with 2 cores, 2.8 GiB RAM
+25/11/09 20:57:24 INFO Master: Registering worker 172.31.12.24:39927 with 2 cores, 2.8 GiB RAM
+25/11/09 20:57:24 INFO Master: Registering worker 172.31.6.134:44267 with 2 cores, 2.8 GiB RAM
+25/11/09 22:28:32 INFO Master: 172.31.6.134:56244 got disassociated, removing it.
+25/11/09 22:28:32 INFO Master: 172.31.6.134:44267 got disassociated, removing it.
+25/11/09 22:28:32 INFO Master: Removing worker worker-20251109205723-172.31.6.134-44267 on 172.31.6.134:44267
+25/11/09 22:28:32 INFO Master: Telling app of lost worker: worker-20251109205723-172.31.6.134-44267
+25/11/09 22:28:32 INFO Master: 172.31.8.63:39498 got disassociated, removing it.
+25/11/09 22:28:32 INFO Master: 172.31.8.63:46331 got disassociated, removing it.
+25/11/09 22:28:32 INFO Master: Removing worker worker-20251109205723-172.31.8.63-46331 on 172.31.8.63:46331
+25/11/09 22:28:32 INFO Master: Telling app of lost worker: worker-20251109205723-172.31.8.63-46331
+25/11/09 22:28:32 INFO Master: 172.31.12.24:52696 got disassociated, removing it.
+25/11/09 22:28:32 INFO Master: 172.31.12.24:39927 got disassociated, removing it.
+25/11/09 22:28:32 INFO Master: Removing worker worker-20251109205723-172.31.12.24-39927 on 172.31.12.24:39927
+25/11/09 22:28:32 INFO Master: Telling app of lost worker: worker-20251109205723-172.31.12.24-39927
+25/11/09 22:28:32 INFO Master: 172.31.2.233:54578 got disassociated, removing it.
+25/11/09 22:28:32 INFO Master: 172.31.2.233:35819 got disassociated, removing it.
+25/11/09 22:28:32 INFO Master: Removing worker worker-20251109205722-172.31.2.233-35819 on 172.31.2.233:35819
+25/11/09 22:28:32 INFO Master: Telling app of lost worker: worker-20251109205722-172.31.2.233-35819
+25/11/09 22:31:09 ERROR Master: RECEIVED SIGNAL TERM
