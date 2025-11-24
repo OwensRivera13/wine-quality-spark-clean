@@ -4,3 +4,10 @@ The model predicts wine quality based on chemical property inputs using the UCI 
 
 (during the upload process, some files inside the project could not be pushed to github because the Git reported a missing blob object inside .git/objects which caused a lot of issues, however the code uploaded here is the neccesary components of the project and will run successfully)
 (NOTED: SSH keys have been removed for security reasons, code should run as normal without)
+
+To run python code:
+
+python3 wine_train_cls.py       OR      spark-submit wine_train_cls.py TrainingDataset.csv (preferably this one but takes a minute)
+
+spark-submit wine_test_cls.py ValidationDataset.csv
+
